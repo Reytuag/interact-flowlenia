@@ -9,14 +9,9 @@ function printMousePos(event) {
   var headers = {
     "Content-Type": "application/json",
   };
-  console.log(token)
-
-
 
   // Send extension chat message
   var url = "http://35.187.231.87:8000"
-
-  
 
   const body = JSON.stringify({sx:event.clientX,sy:event.clientY});
   fetch(url, {
@@ -25,12 +20,7 @@ function printMousePos(event) {
       body: body
   })
     
-
-
-  
-
 }
-
 // Twitch onAuthorized callback
 // The JWT returned here will give us the broadcaster role, which is needed to post to chat
 // Reference: https://dev.twitch.tv/docs/extensions/reference/#onauthorized
@@ -38,7 +28,7 @@ function printMousePos(event) {
 
 document.getElementById("twitch-embed").addEventListener("click", printMousePos);
 
-
+console.log("test")
 
 
 
