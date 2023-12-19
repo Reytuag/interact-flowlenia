@@ -1,11 +1,6 @@
 
 function printMousePos(event) {
   console.log("clientX: " + event.clientX + " clientY: " + event.clientY);
-
-  
-
-
-
   var headers = {
     "Content-Type": "application/json",
   };
@@ -28,7 +23,7 @@ function printMousePos(event) {
 
 document.getElementById("myIframe").addEventListener("click", printMousePos);
 
-console.log("test")
 
+console.log("test")
 
 
