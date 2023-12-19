@@ -26,7 +26,7 @@ function printMousePos(event) {
 // Reference: https://dev.twitch.tv/docs/extensions/reference/#onauthorized
 
 
-document.getElementById("twitch-embed").addEventListener("click", printMousePos);
+document.getElementById("myIframe").addEventListener("click", printMousePos);
 
 console.log("test")
 
