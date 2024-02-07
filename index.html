@@ -1,9 +1,27 @@
 <!DOCTYPE html>
   <body>
     <!-- Add a placeholder for the Twitch embed -->
-    
-    <div id="myIframe" style="width: 800;height: 800 ;"></div>
+
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 1425,
+        height: 1425,
+        channel: "reytuag",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+
+
+    <div id="myIframe" style="width:800px;height:800px;left: 317px;top: 9px;position: absolute;"></div>
     <script src="interact.js"></script>
+    <button type="button_remove_frame" onclick="hideFrame()">Remove frame</button> 
     
   </body>
 
